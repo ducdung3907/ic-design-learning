@@ -1,0 +1,32 @@
+module priority_encoder (
+    input  logic [3:0] req,
+    output logic [1:0] enc_out,
+    output logic       valid
+);
+
+    always_comb begin
+        casez (req)
+            4'b1??? : begin
+                enc_out = 2'd3;
+                valid   = 1'b1;
+            end
+            4'b01?? : begin
+                enc_out = 2'd2;
+                valid   = 1'b1;
+            end
+            4'b001? : begin
+                enc_out = 2'd1;
+                valid   = 1'b1;
+            end
+            4'b0001 : begin
+                enc_out = 2'd0;
+                valid   = 1'b1;
+            end
+            default : begin
+                enc_out = 2'd0;
+                valid   = 1'b0;
+            end
+        endcase
+    end
+
+endmodule
