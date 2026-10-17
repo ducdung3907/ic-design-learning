@@ -1,0 +1,13 @@
+# Simulator executables
+mux_sim
+adder_sim
+*.out
+
+# Waveform files
+*.vcd
+*.fst
+
+# Log and cache files
+*.log
+*.key
+__pycache__/
