@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-
+//WIDTH >= 2
 module alu4 #(
     parameter WIDTH = 4
 )(
