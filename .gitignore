@@ -1,4 +1,24 @@
-*.vcd
-*_sim
+# Simulator outputs (Icarus Verilog and others)
 *.vvp
+*_sim
 a.out
+simv*
+*.out
+build/
+
+# Waveforms
+*.vcd
+*.fst
+*.wdb
+
+# Logs and tool caches
+*.log
+*.key
+csrc/
+*.daidir/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
