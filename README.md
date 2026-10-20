@@ -57,4 +57,9 @@ Each module folder holds the design file(s), a `tb_*.sv` testbench and a short R
 
 - SystemVerilog (IEEE 1800-2012)
 - Icarus Verilog 12 for simulation
-- Testbenches written with AI assistance
+
+## AI use
+
+- **Design (RTL):** all design modules (every `.sv` file not starting with `tb_`) were written by me.
+- **Testbenches:** the `tb_*.sv` testbenches were generated with AI assistance (Claude Code), then run against my designs in Icarus Verilog.
+- **Repo maintenance:** Claude Code reorganized the folder structure, wrote the READMEs and `run_tests.sh`, and made those commits under version control. That is why Claude appears as a contributor.
